@@ -10,7 +10,7 @@ const TodoForm = () => {
     e.preventDefault();
     setTitle("");
     setDescription("");
-    const response = await fetch("http://localhost:3000/api/addTodo", {
+    const response = await fetch("https://hi-todo-backend.onrender.com/api/addTodo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

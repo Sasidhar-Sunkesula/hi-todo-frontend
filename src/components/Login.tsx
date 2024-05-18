@@ -19,7 +19,7 @@ const Login = () => {
     e.preventDefault();
     setUsername("");
     setPassword("");
-    const userResponse = await fetch("http://localhost:3000/api/auth/login", {
+    const userResponse = await fetch("https://hi-todo-backend.onrender.com/api/auth/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ const Login = () => {
       }),
     });
     const userData = await userResponse.json();
-    const todoResponse = await fetch("http://localhost:3000/api/getAllTodos", {
+    const todoResponse = await fetch("https://hi-todo-backend.onrender.com/api/getAllTodos", {
       credentials: "include",
     });
     if (!todoResponse.ok) {

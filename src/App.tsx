@@ -12,7 +12,7 @@ import { todoList } from "./utils/todoSlice";
 function App() {
   const dispatch = useDispatch();
   const getUserDetails = async () => {
-    const response = await fetch("http://localhost:3000/api/getUserDetails", {
+    const response = await fetch("https://hi-todo-backend.onrender.com/api/getUserDetails", {
       credentials: "include",
     });
     if (!response.ok) {
@@ -22,7 +22,7 @@ function App() {
     dispatch(login(data));
   };
   const fetchTodos = async () => {
-    const response = await fetch("http://localhost:3000/api/getAllTodos", {
+    const response = await fetch("https://hi-todo-backend.onrender.com/api/getAllTodos", {
       credentials: "include",
     });
     if (!response.ok) {

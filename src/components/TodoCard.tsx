@@ -20,7 +20,7 @@ const TodoCard = ({ todo }: TodoCardProps) => {
   const { description, done, title, id } = todo;
   const indexFromStore = list.findIndex((item: Todo)=> item.id=== id)
   const deleteTodo = async () => {
-    const response = await fetch(`http://localhost:3000/api/deleteTodo/${id}`, {
+    const response = await fetch(`https://hi-todo-backend.onrender.com/api/deleteTodo/${id}`, {
       credentials: "include",
       method: "DELETE",
     });

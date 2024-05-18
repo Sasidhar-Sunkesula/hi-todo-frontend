@@ -9,7 +9,7 @@ const Header = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const user = useSelector((store: any) => store.user.user);
   const logout1 = async () => {
-    await fetch("http://localhost:3000/api/auth/logout", {
+    await fetch("https://hi-todo-backend.onrender.com/api/auth/logout", {
       credentials: "include",
     });
     dispatch(logout());
