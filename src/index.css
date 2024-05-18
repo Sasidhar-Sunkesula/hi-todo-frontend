@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* styles.css */
+.h-screen-minus-header {
+    height: calc(100vh - 64px);
+  }
